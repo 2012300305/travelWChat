@@ -1,0 +1,9 @@
+<!--pages/zdm/zdmDetail/zdmDetail.wxml-->
+<view class="weui-flex">
+  <view class="weui-flex__item">
+    <view class="placeholder">
+      <!--这个地方加一个轮播图，来播放景点的一些照片-->
+      <mp-gallery show="{{show}}" bindchange="change" img-urls="{{imgUrls}}" current="1" bindtap="hideImage"></mp-gallery>
+    </view>
+  </view>
+</view>

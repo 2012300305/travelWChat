@@ -1,0 +1,13 @@
+
+{
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "探索",
+  "navigationBarBackgroundColor": "#ededed",
+  "component": true,
+  "pageOrientation": "auto",
+  "usingComponents": {
+    "mp-searchbar": "../../component/components/searchbar/searchbar",
+    "mp-navigation-bar": "../../component/components/navigation-bar/navigation-bar"
+  }
+}

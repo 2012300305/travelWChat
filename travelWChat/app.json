@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/zdm/listview",
+    "pages/third/third",
+    "pages/forth/forth",
+    "pages/zdm/zdmDetail/zdmDetail",
+    "pages/zdm/learnmore/learnmore",
+    "pages/zdm/learnmore/moreimage/moreimage",
+    "pages/forth/login/login",
+    "pages/third/roadDetail/roadDetail"
+  ],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#686869",
+    "backgroundColor": "#FF00FF"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/zdm/listview",
+        "text": "探索",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/third/third",
+        "text": "三页",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/forth/forth",
+        "text": "四页",
+        "iconPath": "",
+        "selectedIconPath": ""
+      }
+    ],
+    "backgroundColor": "#f3f3f3",
+    "color": "#999",
+    "selectedColor": "#576b95"
+  },
+  "sitemapLocation": "sitemap.json"
+}

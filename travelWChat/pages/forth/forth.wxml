@@ -1,0 +1,70 @@
+<!--pages/forth/forth.wxml-->
+<mp-navigation-bar
+  loading="{{loading}}"
+  show="{{show}}"
+  animated="{{animated}}"
+  color="{{color}}"
+  background="{{background}}"
+  title="我的"
+  back="{{false}}"
+>
+</mp-navigation-bar>
+<!--下面是新加的内容-->
+<!--这里显示的是个人信息相关的内容后面记得添加逻辑相关的内容-->
+<view class="bg">
+  <view class="head">
+    <view class="headIcon">
+      <open-data type="userAvatarUrl" style="width:60px;height:60px;"></open-data>
+      <!--<image src="../../images/forthPage/头像.png" ></image>-->
+    </view>
+    <view class="self-login">
+      <!--上面这个地方在没有登录的时候显示游客登录的时候显示个人信息
+      <text class="name">路人甲</text>-->
+      <view class="name">
+        <open-data type="userNickName" style="position:relative;top:10px;"></open-data>
+      </view>
+      <!--按钮实现授权登录
+      <button class="login" bindtap="userLogin">用户登录 ></button>-->
+    </view>
+  </view>
+</view>
+<!--这个地方添加一个子组件，用来授权登录使用-->
+<login class="login-self" style="display:{{isHide}}"></login>
+<!--添加悬浮在头部的内容
+<view class="nav">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item">
+      <view class="cc-content">
+        <image src="../../images/forthPage/lever.png" class="dd-image"></image>
+        <text></text>
+      </view>
+    </view>
+    <view class="flex-item">2
+    </view>
+    <view class="flex-item">3
+    </view>
+    <view class="flex-item">4
+    </view>
+  </view>
+</view>-->
+<!--这个是下面的内容-->
+<view class='item'>
+  <view class="title">手机绑定</view>
+  <view class="detail2">
+    <text>></text>
+  </view>
+</view>
+<view class="line"></view>
+<view class='item'>
+  <view class="title">阅读文章</view>
+  <view class="detail2">
+    <text>></text>
+  </view>
+</view>
+<view class="line"></view>
+<view class='item'>
+  <view class="title">收藏记录</view>
+  <view class="detail2">
+    <text>></text>
+  </view>
+</view>

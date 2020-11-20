@@ -1,0 +1,54 @@
+<!--pages/zdm/listview.wxml-->
+<!--第二个页面主要是防找蛋糕那个页面的样式-->
+<!--开头要放置一个搜索框-->
+<mp-navigation-bar
+  loading="{{loading}}"
+  show="{{show}}"
+  animated="{{animated}}"
+  color="{{color}}"
+  background="{{background}}"
+  title="探索"
+  back="{{false}}"
+>
+</mp-navigation-bar>
+<view class="page__bd">
+  <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+</view>
+<!--左右滚动栏-->
+<text class="head-text">从【图片】开始探索</text>
+<!--<scroll-view scroll-y="true" style="height: 300rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">-->
+<scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" >
+  <view id="demo1" class="scroll-view-item_H demo-text-1" bindtap="learnmoreimage">
+    <image class="images" src="../../images/secondPage/熊猫1.jpg"></image>
+    <text class="texts">大熊猫</text>
+  </view>
+  <view id="demo2"  class="scroll-view-item_H demo-text-2">
+    <image class="images" src="../../images/secondPage/九寨沟1.jpg"></image>
+    <text class="texts">九寨沟</text>
+  </view>
+  <view id="demo3" class="scroll-view-item_H demo-text-3">
+    <image class="images" src="../../images/secondPage/三星堆1.jpg"></image>
+    <text class="texts">三星堆</text>
+  </view>
+</scroll-view>
+<!--奇数图片展示区-->
+<view class="m-odd" bindtap="goCake" data-brand="0">
+  <text class="image-title">从【起源】开始探索</text>
+  <text class="image-intro">东方世界的日间仙境</text>
+  <text class="image-intro">西方世界的童话世界</text>
+  <button class="learn-detail" type="default" plain="true" style="color:#ffffff; border:0.6rpx solid #ffffff;" bindtap="learnmore">了解详情</button>
+</view>
+<!--偶数图片展示区域-->
+<view class="m-even">
+  <view class="text-box">
+    <text class="text-box-title">从【黑白】开始探索</text>
+    <text class="text-box-word">国家一级保护动物</text>
+    <text class="text-box-word">今日带你领略：国宝</text>
+  </view>
+</view>
+<view class="m-odd2" bindtap="goCake" data-brand="0">
+  <text class="image-title">从【朝代】开始探索</text>
+  <text class="image-intro">十余个朝代的三星堆</text>
+  <text class="image-intro">今日带你走近：三星堆</text>
+  <button class="learn-detail" type="default" plain="true" style="color:#ffffff; border:0.6rpx solid #ffffff;">了解详情</button>
+</view>

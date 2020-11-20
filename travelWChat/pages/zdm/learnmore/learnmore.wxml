@@ -1,0 +1,118 @@
+<view class="">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper
+        indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}"
+        circular="{{circular}}" 
+        vertical="{{vertical}}"
+        interval="{{interval}}"
+        duration="{{duration}}"
+        previous-margin="{{previousMargin}}px"
+        next-margin="{{nextMargin}}px"
+      >
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item.classname}}">
+              <image src="{{item.imageurl}}" class="second-swiper-image"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+</view>
+<view>
+<!--这个地方加文字说明-->
+  <!--地方名字-->
+  <text class="name-title">九寨沟</text>
+  <!--详情介绍-->
+  <text class="title {{content?'content':'content1'}}">
+    九寨沟——世界自然遗产、国家重点风景名胜区、国家AAAAA级旅游景区、国家级自然保护区、国家地质公园、世界生物圈保护区网络，是中国第一个以保护自然风景为主要目的的自然保护区。九寨沟景区在外也美名远播，东方人称之为“人间仙境”，西方人则将之誉为“童话世界”。
+  </text>
+  <view bindtap='content'>
+    <view class="button">
+      <button>{{content?'展开':'收起'}}</button>
+    </view>
+  </view>
+</view>
+<view class="page__bd page__bd_spacing">
+  <view class="weui-flex">
+      <view class="weui-flex__item image-box">
+        <view class="placeholder">
+          <!--这个地方放一个画册-->
+          <image class="iamge-one" src="../../../images/secondPage/九寨沟2.jpg"></image>
+          <button class="learn-more-image" bindtap="tomoreimage">了解更多</button>
+        </view>
+      </view>
+      <!--最后加完图片之后记得把中间留点空隙-->
+      <view class="weui-flex__item image-box">
+        <view class="placeholder">
+          <!--这个地方放一个画册-->
+          <image class="iamge-one" src="../../../images/secondPage/九寨沟3.jpg"></image>
+          <button class="learn-more-image">了解更多</button>
+        </view>
+      </view>
+  </view>
+</view>
+<view>
+<!--这个地方加文字说明-->
+  <!--地方名字-->
+  <text class="small-name-title">芦苇海</text>
+  <!--详情介绍-->
+  <text class="title {{content?'content':'content1'}}">
+    芦苇海海拔2140米，全长2.2公里，是一个半沼泽湖泊。海中芦苇丛生，水鸟飞翔，清溪碧流，漾绿摇翠，蜿蜒空行，好一派泽国风光。“芦苇海”中，荡荡芦苇，一片青葱，微风徐来，绿浪起伏。飒飒之声，委婉抒情，使人心旷神怡。
+  </text>
+  <view bindtap='content'>
+    <view class="button">
+      <button>{{content?'展开':'收起'}}</button>
+    </view>
+  </view>
+</view>
+<view class="page__bd page__bd_spacing">
+  <view class="weui-flex">
+    <view class="weui-flex__item image-only-one-box">
+      <view class="placeholder">
+        <!--这个地方放一个画册-->
+        <image class="image-only-one" src="../../../images/secondPage/九寨沟芦苇海.jpg"></image>
+        <button class="learn-only-more-image" bindtap="tomoreimage">了解更多</button>
+      </view>
+    </view>
+  </view>
+</view>
+<view>
+<!--这个地方加文字说明-->
+  <!--地方名字-->
+  <text class="small-name-title">珍珠滩瀑布</text>
+  <!--详情介绍-->
+  <text class="title {{content?'content':'content1'}}">
+    珍珠滩瀑布珍珠滩瀑布高21米，宽162米，是九寨沟内一个典型的组合景观，是电视剧《西游记》片段中，唐僧师徒牵马涉水的地方。瀑布落差最大可达40米，气势非凡，雄伟壮观。瀑布冲进谷底，卷起千堆浪花，向东狂奔而去。
+  </text>
+  <view bindtap='content'>
+    <view class="button">
+      <button>{{content?'展开':'收起'}}</button>
+    </view>
+  </view>
+</view>
+<!--下面放一个对半的画册用来展示景点图片和一些发布的照片-->
+<view class="page__bd page__bd_spacing">
+  <view class="weui-flex">
+      <view class="weui-flex__item image-box">
+        <view class="placeholder">
+          <!--这个地方放一个画册-->
+          <image class="iamge-one" src="../../../images/secondPage/诺日朗瀑布.jpg"></image>
+          <button class="learn-more-image" bindtap="tomoreimage">了解更多</button>
+        </view>
+      </view>
+      <!--最后加完图片之后记得把中间留点空隙-->
+      <view class="weui-flex__item image-box">
+        <view class="placeholder">
+          <!--这个地方放一个画册-->
+          <image class="iamge-one" src="../../../images/secondPage/五彩池33.jpg"></image>
+          <button class="learn-more-image">了解更多</button>
+        </view>
+      </view>
+  </view>
+</view>
+
+

@@ -1,0 +1,12 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "四页",
+  "navigationBarBackgroundColor": "#ededed",
+  "component": true,
+  "pageOrientation": "auto",
+  "usingComponents": {
+    "mp-navigation-bar": "../../component/components/navigation-bar/navigation-bar",
+    "login":"../forth/login/login"
+  }
+}

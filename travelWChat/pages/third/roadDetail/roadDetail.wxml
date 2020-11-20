@@ -1,0 +1,47 @@
+<!--pages/third/roadDetail/roadDetail.wxml-->
+<view class="">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper
+        indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}"
+        circular="{{circular}}" 
+        vertical="{{vertical}}"
+        interval="{{interval}}"
+        duration="{{duration}}"
+        previous-margin="{{previousMargin}}px"
+        next-margin="{{nextMargin}}px"
+      >
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item.classname}}">
+              <image src="{{item.imageurl}}" class="second-swiper-image"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+</view>
+<view>
+  <text class="name-title">三星堆</text>
+  <text class="title {{content?'content':'content1'}}">
+    三星堆古遗址分布面积12平方公里，距今已有5000至3000年历史，是迄今在西南地区发现的范围最大、延续时间最长、文化内涵最丰富的古城、古国、古蜀文化遗址。现有保存最完整的东、西、南城墙和月亮湾内城墙。三星堆古遗址被称为20世纪人类最伟大的考古发现之一，昭示了长江流域与黄河流域一样，同属中华文明的母体，被誉为“长江文明之源”
+  </text>
+  <view bindtap='content'>
+    <view class="button">
+      <button>{{content?'展开':'收起'}}</button>
+    </view>
+  </view>
+</view>
+<view>
+  <text class="small-name-title">游玩攻略</text>
+  <text class="title content1">
+    旅游交通攻略：成都到三星堆距离不到30公里，交通便利，108国道、成绵高速、成绵乐城际列车、宝成铁路均可达到。
+      一、自驾车：108国道（至广汉）、成绵高速（至广汉）。
+      二、高铁：可乘坐成绵乐城际列车，到广汉北站，乘坐1路公交车，在浏阳名苑换乘10路公交车，到三星堆博物馆站。二、景区直通车：在成都景区直通车武侯祠服务点（每天11:30发车）或大熊猫繁殖研究基地服务点（每天12:30发车）乘坐，一站直达无障碍往返。
+      三、其它车次：成都市区内乘坐1、7、45、63、69、70、71、83、302路公交车至昭觉寺车站（咨询电话028-83504125），换车至广汉仅需要20分钟，广汉至三星堆乘坐6路、10路公交车即可达到。
+      四、三星堆博物馆咨询电话：0838-5651550　5510349
+  </text>
+</view>
+

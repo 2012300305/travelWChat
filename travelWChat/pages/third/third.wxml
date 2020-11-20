@@ -1,0 +1,128 @@
+<!--这个是头部的导航栏-->
+<mp-navigation-bar
+  loading="{{loading}}"
+  show="{{show}}"
+  animated="{{animated}}"
+  color="{{color}}"
+  background="{{background}}"
+  title="商城"
+  back="{{false}}"
+>
+</mp-navigation-bar>
+<!--下面要添加这一页的具体内容-->
+<!--第一部分的轮播-->
+<view>
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper
+        indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}"
+        circular="{{circular}}"
+        vertical="{{vertical}}"
+        interval="{{interval}}"
+        duration="{{duration}}"
+        previous-margin="{{previousMargin}}px"
+        next-margin="{{nextMargin}}px"
+      >
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item.classname}}">
+              <image src="{{item.imageurl}}" class="swiper-image"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+</view>
+<!--第二部分的悬浮的导航栏-->
+<view class="section">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc">
+      <image src="./../../images/thirdPage/三星堆小图.jpg" class="small-image"></image>
+      <text class="small-text">三星堆</text>
+    </view>
+    <view class="flex-item bc">
+      <image src="./../../images/thirdPage/九寨沟图片.jpg" class="small-image"></image>
+      <text class="small-text">九寨沟</text>
+    </view>
+    <view class="flex-item bc">
+      <image src="./../../images/thirdPage/大熊猫照片.jpg" class="small-image"></image>
+      <text class="small-text">大熊猫</text>
+    </view>
+  </view>
+</view>
+<!--第三部分的下面小导航栏-->
+<!--填入图片之后记得把image的大小规范一下，默认的大小有些问题,到时候再把小方框的样式调一下-->
+<view class="third">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item cc">
+      <view class="cc-content">
+        <image src="../../images/thirdPage/旅游.png" class="cc-image"></image>
+        <text>精品路线</text>
+      </view>
+    </view>
+    <view class="flex-item cc">
+      <view class="cc-content">
+        <image src="../../images/thirdPage/旅游 (3).png" class="cc-image"></image>
+        <text>旅拍服务</text>
+      </view>
+    </view>
+    <view class="flex-item cc">
+      <view class="cc-content">
+        <image src="../../images/thirdPage/旅游 (4).png" class="cc-image"></image>
+        <text>出行制定</text>
+      </view>
+    </view>
+    <view class="flex-item cc">
+      <view class="cc-content">
+        <image src="../../images/thirdPage/旅游 (1).png" class="cc-image"></image>
+        <text>用车服务</text>
+      </view>
+    </view>
+    <view class="flex-item cc">
+      <view class="cc-content">
+        <image src="../../images/thirdPage/旅游 (2).png" class="cc-image"></image>
+        <text>当地向导</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!--第四部分-->
+<view class="forth">
+  <view class="forth-content">
+    <text class="title">热门游玩</text>
+    <view class="flex-wrp forth-content-content" style="flex-direction:column;">
+      <view class="flex-item dd">
+        <view class="dd-content">
+          <image src="../../images/thirdPage/panada.jpg" class="dd-image"></image>
+          <view class="dd-describe">
+            <text class="dd-text">熊猫基地游玩攻略</text>
+            <image class="icon-image" src="../../images/thirdPage/收 藏 .png"></image>
+            <text class="icon-text">收藏</text>
+          </view>
+        </view>
+      </view>
+      <view class="flex-item dd">
+        <view class="dd-content">
+          <image src="../../images/thirdPage/芦苇海2.jpg" class="dd-image"></image>
+          <view class="dd-describe">
+            <text class="dd-text">九寨沟-人间的天堂</text>
+            <image class="icon-image" src="../../images/thirdPage/收 藏 .png"></image>
+            <text class="icon-text">收藏</text>
+          </view>
+        </view>
+      </view>
+      <view class="flex-item dd" bindtap="roadDetail">
+        <view class="dd-content">
+          <image src="../../images/thirdPage/三星堆序厅.jpg" class="dd-image"></image>
+          <view class="dd-describe">
+            <text class="dd-text">三星堆-长江文明之源</text>
+            <image class="icon-image" src="../../images/thirdPage/收 藏 .png"></image>
+            <text class="icon-text">收藏</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

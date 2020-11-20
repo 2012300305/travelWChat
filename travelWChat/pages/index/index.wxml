@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+   <image class="animate-image" src="../../icon/images/test0.jpg"></image> 
+</view>
+<view class="music-image">
+   <image
+      src="../../icon/images/音乐.png"
+      class="{{isPlay?'rotateAn':'static'}}"
+      bindtap="controlMusic"
+   >
+   <audio id="myAudio"></audio>
+   </image>
+</view>
+<!--<tabBar></tabBar>-->
